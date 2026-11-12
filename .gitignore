@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.vscode/
+*.tsbuildinfo
+assets/
+package-lock.json
+.DS_Store
+Thumbs.db

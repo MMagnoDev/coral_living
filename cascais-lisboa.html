@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cascais &amp; Lisboa | Coral Living Portugal</title>
+  <meta
+    name="description"
+    content="Um percurso pensado à sua medida, com especial atenção a Cascais e Lisboa. Conheça o território através do olhar da Coral."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollProgressBar"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner container">
+      <a href="index.html" class="brand" aria-label="Coral Living Início">
+        <img src="logo.png" alt="Coral Living" class="brand__logo" />
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação Principal">
+        <a href="a-coral.html" class="site-nav__link">A Coral</a>
+        <a href="servicos.html" class="site-nav__link">Serviços</a>
+        <a href="collection.html" class="site-nav__link">Collection</a>
+        <a href="comunidade.html" class="site-nav__link">Comunidade</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <a href="cascais-lisboa.html" class="header-meta-link is-active">Cascais &amp; Lisboa</a>
+        <a href="fundadoras.html" class="header-meta-link">Fundadoras</a>
+        <button type="button" class="header-tour-btn" data-open-modal data-ritual="Conversa Inicial">
+          <span>Vamos conversar</span>
+          <span class="arrow-ne" aria-hidden="true">↗</span>
+        </button>
+
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-drawer__nav" aria-label="Navegação Mobile">
+      <a href="a-coral.html" class="mobile-drawer__link">A Coral</a>
+      <a href="servicos.html" class="mobile-drawer__link">Serviços</a>
+      <a href="collection.html" class="mobile-drawer__link">Collection</a>
+      <a href="comunidade.html" class="mobile-drawer__link">Comunidade</a>
+      <a href="cascais-lisboa.html" class="mobile-drawer__link">Cascais &amp; Lisboa</a>
+      <a href="fundadoras.html" class="mobile-drawer__link">Fundadoras</a>
+      <button type="button" class="pill-btn pill-btn--light" data-open-modal data-ritual="Conversa Inicial">
+        <span>Vamos conversar</span>
+        <span class="pill-btn__icon">↗</span>
+      </button>
+    </nav>
+  </div>
+
+  <main>
+    <section class="subpage-hero">
+      <div class="hero__media" data-parallax="-0.16">
+        <img
+          src="public/images/03_Praca_1920x1080.jpg"
+          alt="Praça histórica com calçada portuguesa e azulejos em Cascais"
+          class="hero__img"
+        />
+        <div class="hero__scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="subpage-hero__content container">
+        <div>
+          <span class="eyebrow eyebrow--light">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            TERRITÓRIO
+          </span>
+          <h1 class="subpage-hero__title">
+            Cascais e Lisboa,<br />
+            <em>vividos de dentro.</em>
+          </h1>
+        </div>
+
+        <div class="subpage-hero__aside">
+          <p class="hero__subtitle">
+            Conhecemos cada bairro, o ritmo de cada estação, a luz das suas ruas
+            e a forma como o mar e a cidade se encontram no dia a dia.
+          </p>
+          <a href="collection.html" class="pill-btn pill-btn--light">
+            <span>Explorar a Collection</span>
+            <span class="pill-btn__circle" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="organic-flora organic-flora--subpage-top-left" data-parallax-box="0.06" aria-hidden="true">
+        <img
+          src="public/images/img_fundo/Flor%20verde-lim%C3%A3o%20com%20ramos%20longos-1%20(1).png"
+          alt=""
+          loading="lazy"
+        />
+      </div>
+      <div class="container">
+        <div class="territory-grid">
+          <article class="territory-block" data-reveal="fade-up">
+            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>CASCAIS &amp; ESTORIL</span>
+            <h2 class="collection-card__title">Luz atlântica e vida ao ar livre</h2>
+            <div class="image-frame image-frame--4x3">
+              <img src="public/images/04_Boca_do_Inferno.jpg" alt="Costa atlântica na Boca do Inferno em Cascais" loading="lazy" />
+            </div>
+            <p class="body-muted">
+              Da vila histórica ao Monte Estoril, da Guia ao Guincho, Cascais
+              oferece tranquilidade familiar, excelentes escolas internacionais,
+              desporto náutico e o equilíbrio raro entre natureza e proximidade a
+              Lisboa.
+            </p>
+          </article>
+
+          <article class="territory-block" data-reveal="fade-up" data-delay="120">
+            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>LISBOA HISTÓRICA &amp; CONTEMPORÂNEA</span>
+            <h2 class="collection-card__title">Bairros com alma e ritmo urbano</h2>
+            <div class="image-frame image-frame--4x3">
+              <img src="public/images/02_Rua_Comercial_1920x1080.jpg" alt="Rua pedonal histórica portuguesa" loading="lazy" />
+            </div>
+            <p class="body-muted">
+              Lapa, Príncipe Real, Chiado, Estrela e Avenidas Novas revelam
+              diferentes maneiras de habitar a capital, entre fachadas de azulejo,
+              jardins de bairro, arquitetura reabilitada e vida cultural vibrante.
+            </p>
+          </article>
+
+          <article class="territory-block" data-reveal="fade-up">
+            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>LINHA DE COSTA</span>
+            <h2 class="collection-card__title">O mar como extensão da casa</h2>
+            <div class="image-frame image-frame--4x3">
+              <img src="public/images/06_Praia.jpg" alt="Praia de águas claras na costa de Cascais" loading="lazy" />
+            </div>
+            <p class="body-muted">
+              Paredão matinal, mercados locais e pequenas enseadas onde o tempo
+              abranda durante todo o ano.
+            </p>
+          </article>
+
+          <article class="territory-block" data-reveal="fade-up" data-delay="120">
+            <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>PATRIMÓNIO &amp; JARDINS</span>
+            <h2 class="collection-card__title">Arquitetura com história</h2>
+            <div class="image-frame image-frame--4x3">
+              <img src="public/images/03_Rua.jpg" alt="Avenida arborizada junto à costa de Cascais" loading="lazy" />
+            </div>
+            <p class="body-muted">
+              Ajudamos a distinguir os lugares que mantêm autenticidade e
+              valorização consistente ao longo do tempo.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="organic-flora organic-flora--footer-seam" data-parallax-box="-0.06" aria-hidden="true">
+      <img
+        src="public/images/img_fundo/Flor%20esbo%C3%A7ada%20amarelo-lima%20com%20ramo%20sinuoso-2%20(1).png"
+        alt=""
+        loading="lazy"
+      />
+    </div>
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__cta-col" data-reveal="fade-up">
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot" aria-hidden="true"></span>CONTACTO</span>
+          <h2 class="footer__heading">O que gostaria de<br />construir em <em>Portugal?</em></h2>
+          <p class="footer__lead">Conte-nos o que procura, o que imagina e o que precisa de esclarecer. O primeiro passo é conhecermo-nos.</p>
+          <div class="footer__cta-actions">
+            <button type="button" class="pill-btn pill-btn--light" data-open-modal data-ritual="Conversa Inicial">
+              <span>Fale connosco</span>
+              <span class="pill-btn__circle" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="footer__info-grid" data-reveal="fade-up" data-delay="120">
+          <div class="footer-info-block"><span class="footer-info-block__label">TERRITÓRIO</span><p class="footer-info-block__value">Cascais &amp; Lisboa<br />Portugal</p></div>
+          <div class="footer-info-block"><span class="footer-info-block__label">CONTACTO DIRETO</span><p class="footer-info-block__value"><a href="mailto:ola@coralportugal.pt">ola@coralportugal.pt</a><br /><a href="tel:+351210000000">+351 210 000 000</a></p></div>
+          <div class="footer-info-block"><span class="footer-info-block__label">ATENDIMENTO</span><p class="footer-info-block__value">Segunda a Sexta</p></div>
+          <div class="footer-info-block"><span class="footer-info-block__label">HORÁRIO</span><p class="footer-info-block__value">09:00 às 19:00</p></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="index.html" class="brand brand--footer" aria-label="Coral Living Início"><img src="logo.png" alt="Coral Living" class="brand__logo brand__logo--footer" /></a>
+        <p class="footer__copyright">© 2026 Coral. Todos os direitos reservados.</p>
+        <nav class="footer__nav" aria-label="Navegação Rodapé">
+          <a href="a-coral.html">A Coral</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="collection.html">Collection</a>
+          <a href="comunidade.html">Comunidade</a>
+          <a href="cascais-lisboa.html">Cascais &amp; Lisboa</a>
+          <a href="fundadoras.html">Fundadoras</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sanctuary-modal" id="sanctuaryModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="sanctuary-modal__backdrop" data-close-modal></div>
+    <div class="sanctuary-modal__dialog">
+      <button type="button" class="sanctuary-modal__close" data-close-modal aria-label="Fechar janela">✕</button>
+      <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>CORAL · CASCAIS &amp; LISBOA</span>
+      <h3 class="sanctuary-modal__title" id="modalTitle">O primeiro passo é <em>conhecermo-nos.</em></h3>
+      <p class="sanctuary-modal__desc">Conte-nos o que procura, o que imagina e o que precisa de esclarecer. A Anne e a Constança respondem pessoalmente.</p>
+      <form class="sanctuary-form" id="sanctuaryForm">
+        <div class="sanctuary-form__field"><label for="guestName">Nome completo</label><input type="text" id="guestName" name="guestName" placeholder="Mariana Silva" required /></div>
+        <div class="sanctuary-form__field"><label for="guestEmail">Endereço de email</label><input type="email" id="guestEmail" name="guestEmail" placeholder="mariana@exemplo.pt" required /></div>
+        <div class="sanctuary-form__field">
+          <label for="guestRitual">Em que etapa podemos ajudar?</label>
+          <select id="guestRitual" name="guestRitual">
+            <option value="Conversa Inicial">Conversa Inicial</option>
+            <option value="Compra">Compra</option>
+            <option value="Arrendamento">Arrendamento</option>
+            <option value="Relocation">Relocation</option>
+            <option value="Investimento">Investimento</option>
+          </select>
+        </div>
+        <button type="submit" class="pill-btn pill-btn--dark"><span>Enviar mensagem</span><span class="pill-btn__circle" aria-hidden="true">→</span></button>
+        <p class="sanctuary-form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

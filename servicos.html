@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serviços | Coral Living Portugal</title>
+  <meta
+    name="description"
+    content="O apoio certo, em cada momento. Relocation, Compra, Venda, Arrendamento, Investimento, Concierge e Rede de parceiros em Portugal."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollProgressBar"></div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner container">
+      <a href="index.html" class="brand" aria-label="Coral Living Início">
+        <img src="logo.png" alt="Coral Living" class="brand__logo" />
+      </a>
+
+      <nav class="site-nav" aria-label="Navegação Principal">
+        <a href="a-coral.html" class="site-nav__link">A Coral</a>
+        <a href="servicos.html" class="site-nav__link is-active">Serviços</a>
+        <a href="collection.html" class="site-nav__link">Collection</a>
+        <a href="comunidade.html" class="site-nav__link">Comunidade</a>
+      </nav>
+
+      <div class="site-header__actions">
+        <a href="cascais-lisboa.html" class="header-meta-link">Cascais &amp; Lisboa</a>
+        <a href="fundadoras.html" class="header-meta-link">Fundadoras</a>
+        <button type="button" class="header-tour-btn" data-open-modal data-ritual="Conversa Inicial">
+          <span>Vamos conversar</span>
+          <span class="arrow-ne" aria-hidden="true">↗</span>
+        </button>
+
+        <button type="button" class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <nav class="mobile-drawer__nav" aria-label="Navegação Mobile">
+      <a href="a-coral.html" class="mobile-drawer__link">A Coral</a>
+      <a href="servicos.html" class="mobile-drawer__link">Serviços</a>
+      <a href="collection.html" class="mobile-drawer__link">Collection</a>
+      <a href="comunidade.html" class="mobile-drawer__link">Comunidade</a>
+      <a href="cascais-lisboa.html" class="mobile-drawer__link">Cascais &amp; Lisboa</a>
+      <a href="fundadoras.html" class="mobile-drawer__link">Fundadoras</a>
+      <button type="button" class="pill-btn pill-btn--light" data-open-modal data-ritual="Conversa Inicial">
+        <span>Vamos conversar</span>
+        <span class="pill-btn__icon">↗</span>
+      </button>
+    </nav>
+  </div>
+
+  <main>
+    <section class="subpage-hero">
+      <div class="hero__media" data-parallax="-0.16">
+        <img
+          src="public/images/02_Vista_Aerea.jpg"
+          alt="Vista aérea sobre a baía de Cascais e o Atlântico"
+          class="hero__img"
+        />
+        <div class="hero__scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="subpage-hero__content container">
+        <div>
+          <span class="eyebrow eyebrow--light">
+            <span class="eyebrow__dot" aria-hidden="true"></span>
+            SERVIÇOS CORAL
+          </span>
+          <h1 class="subpage-hero__title">
+            O apoio certo,<br />
+            em <em>cada momento.</em>
+          </h1>
+        </div>
+
+        <div class="subpage-hero__aside">
+          <p class="hero__subtitle">
+            Da preparação da mudança à escolha de uma casa, dos primeiros passos
+            em Portugal às ligações que ajudam a sentir-se parte da comunidade.
+          </p>
+          <button type="button" class="pill-btn pill-btn--light" data-open-modal data-ritual="Conversa Inicial">
+            <span>Fale connosco</span>
+            <span class="pill-btn__circle" aria-hidden="true">→</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-pad">
+      <div class="organic-flora organic-flora--subpage-top-left" data-parallax-box="0.06" aria-hidden="true">
+        <img
+          src="public/images/img_fundo/Flor%20verde-lim%C3%A3o%20com%20ramos%20longos-1%20(1).png"
+          alt=""
+          loading="lazy"
+        />
+      </div>
+      <div class="container">
+        <div class="service-list" id="serviceList">
+          <article class="service-item is-open" data-service-item>
+            <div class="hairline" data-reveal="line"></div>
+            <button type="button" class="service-item__trigger" aria-expanded="true">
+              <span class="service-item__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>CHEGADA &amp; PROCESSOS</span>
+              <span class="service-item__title">Relocation</span>
+              <span class="service-item__meta">
+                <span><em>Foco</em> Mudança</span>
+                <span><em>Âmbito</em> Documentação</span>
+                <span><em>Destino</em> Portugal</span>
+              </span>
+              <span class="service-item__toggle" aria-hidden="true">∨</span>
+            </button>
+            <div class="service-item__panel">
+              <div class="service-item__panel-inner">
+                <div class="service-triptych">
+                  <div class="image-frame image-frame--wide">
+                    <img src="public/images/02_Rua_Comercial_1920x1080.jpg" alt="Rua pedonal histórica em Cascais" loading="lazy" />
+                  </div>
+                  <div class="image-frame image-frame--square">
+                    <img src="public/images/05_Praca.jpg" alt="Praça central em Cascais" loading="lazy" />
+                  </div>
+                  <div class="service-detail-card">
+                    <p class="service-detail-card__text">
+                      Acompanhamento na mudança para Portugal e articulação com
+                      parceiros para documentação e processos burocráticos.
+                    </p>
+                    <button type="button" class="text-action-link" data-open-modal data-ritual="Relocation">
+                      Falar sobre Relocation <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-item" data-service-item>
+            <div class="hairline" data-reveal="line"></div>
+            <button type="button" class="service-item__trigger" aria-expanded="false">
+              <span class="service-item__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>AQUISIÇÃO</span>
+              <span class="service-item__title">Compra</span>
+              <span class="service-item__meta">
+                <span><em>Foco</em> Estilo de vida</span>
+                <span><em>Modo</em> À medida</span>
+                <span><em>Zona</em> Cascais &amp; Lisboa</span>
+              </span>
+              <span class="service-item__toggle" aria-hidden="true">∨</span>
+            </button>
+            <div class="service-item__panel">
+              <div class="service-item__panel-inner">
+                <div class="service-triptych">
+                  <div class="image-frame image-frame--wide">
+                    <img src="public/images/02_Vista_Aerea.jpg" alt="Vista aérea de Cascais" loading="lazy" />
+                  </div>
+                  <div class="image-frame image-frame--square">
+                    <img src="public/images/03_Praca_1920x1080.jpg" alt="Praça histórica em Cascais" loading="lazy" />
+                  </div>
+                  <div class="service-detail-card">
+                    <p class="service-detail-card__text">
+                      Uma procura orientada pelo seu estilo de vida, pelas suas
+                      necessidades e pelo que espera de uma casa.
+                    </p>
+                    <button type="button" class="text-action-link" data-open-modal data-ritual="Compra">
+                      Falar sobre Compra <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-item" data-service-item>
+            <div class="hairline" data-reveal="line"></div>
+            <button type="button" class="service-item__trigger" aria-expanded="false">
+              <span class="service-item__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>REPRESENTAÇÃO</span>
+              <span class="service-item__title">Venda</span>
+              <span class="service-item__meta">
+                <span><em>Foco</em> Valorização</span>
+                <span><em>Modo</em> Dedicado</span>
+                <span><em>Zona</em> Cascais &amp; Lisboa</span>
+              </span>
+              <span class="service-item__toggle" aria-hidden="true">∨</span>
+            </button>
+            <div class="service-item__panel">
+              <div class="service-item__panel-inner">
+                <div class="service-triptych">
+                  <div class="image-frame image-frame--wide">
+                    <img src="public/images/01_Museu.jpg" alt="Património arquitetónico em Cascais" loading="lazy" />
+                  </div>
+                  <div class="image-frame image-frame--square">
+                    <img src="public/images/Pal%C3%A1cio%20de%20Cascais%20%C3%A0%20beira-mar-1.png" alt="Palácio à beira-mar em Cascais" loading="lazy" />
+                  </div>
+                  <div class="service-detail-card">
+                    <p class="service-detail-card__text">
+                      Acompanhamento na venda do seu imóvel, com atenção às suas
+                      características e aos seus objetivos.
+                    </p>
+                    <button type="button" class="text-action-link" data-open-modal data-ritual="Venda">
+                      Falar sobre Venda <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-item" data-service-item>
+            <div class="hairline" data-reveal="line"></div>
+            <button type="button" class="service-item__trigger" aria-expanded="false">
+              <span class="service-item__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>NOVA ETAPA</span>
+              <span class="service-item__title">Arrendamento</span>
+              <span class="service-item__meta">
+                <span><em>Foco</em> Localização</span>
+                <span><em>Modo</em> Flexível</span>
+                <span><em>Zona</em> Portugal</span>
+              </span>
+              <span class="service-item__toggle" aria-hidden="true">∨</span>
+            </button>
+            <div class="service-item__panel">
+              <div class="service-item__panel-inner">
+                <div class="service-triptych">
+                  <div class="image-frame image-frame--wide">
+                    <img src="public/images/03_Rua.jpg" alt="Avenida junto ao mar" loading="lazy" />
+                  </div>
+                  <div class="image-frame image-frame--square">
+                    <img src="public/images/06_Praia.jpg" alt="Enseada em Cascais" loading="lazy" />
+                  </div>
+                  <div class="service-detail-card">
+                    <p class="service-detail-card__text">
+                      Apoio na escolha de uma casa e de uma localização adequadas
+                      à etapa que está a viver.
+                    </p>
+                    <button type="button" class="text-action-link" data-open-modal data-ritual="Arrendamento">
+                      Falar sobre Arrendamento <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-item" data-service-item>
+            <div class="hairline" data-reveal="line"></div>
+            <button type="button" class="service-item__trigger" aria-expanded="false">
+              <span class="service-item__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>PATRIMÓNIO</span>
+              <span class="service-item__title">Investimento</span>
+              <span class="service-item__meta">
+                <span><em>Foco</em> Análise</span>
+                <span><em>Modo</em> Estratégico</span>
+                <span><em>Zona</em> Cascais &amp; Lisboa</span>
+              </span>
+              <span class="service-item__toggle" aria-hidden="true">∨</span>
+            </button>
+            <div class="service-item__panel">
+              <div class="service-item__panel-inner">
+                <div class="service-triptych">
+                  <div class="image-frame image-frame--wide">
+                    <img src="public/images/02_Vista_Aerea.jpg" alt="Zonas prime da costa de Cascais" loading="lazy" />
+                  </div>
+                  <div class="image-frame image-frame--square">
+                    <img src="public/images/Cascais_%20farol%20e%20%C3%A1guas%20turquesa-2.png" alt="Farol e linha de costa em Cascais" loading="lazy" />
+                  </div>
+                  <div class="service-detail-card">
+                    <p class="service-detail-card__text">
+                      Seleção e análise de oportunidades imobiliárias alinhadas
+                      com os seus objetivos.
+                    </p>
+                    <button type="button" class="text-action-link" data-open-modal data-ritual="Investimento">
+                      Falar sobre Investimento <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-item" data-service-item>
+            <div class="hairline" data-reveal="line"></div>
+            <button type="button" class="service-item__trigger" aria-expanded="false">
+              <span class="service-item__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>QUOTIDIANO</span>
+              <span class="service-item__title">Concierge</span>
+              <span class="service-item__meta">
+                <span><em>Foco</em> Chegada</span>
+                <span><em>Modo</em> Personalizado</span>
+                <span><em>Zona</em> Portugal</span>
+              </span>
+              <span class="service-item__toggle" aria-hidden="true">∨</span>
+            </button>
+            <div class="service-item__panel">
+              <div class="service-item__panel-inner">
+                <div class="service-triptych">
+                  <div class="image-frame image-frame--wide">
+                    <img src="public/images/05_Praca.jpg" alt="Vida quotidiana em Cascais" loading="lazy" />
+                  </div>
+                  <div class="image-frame image-frame--square">
+                    <img src="public/images/02_Rua_Comercial_1920x1080.jpg" alt="Comércio local e rotina" loading="lazy" />
+                  </div>
+                  <div class="service-detail-card">
+                    <p class="service-detail-card__text">
+                      Apoio personalizado para facilitar a chegada e o quotidiano
+                      em Portugal.
+                    </p>
+                    <button type="button" class="text-action-link" data-open-modal data-ritual="Concierge">
+                      Falar sobre Concierge <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="service-item" data-service-item>
+            <div class="hairline" data-reveal="line"></div>
+            <button type="button" class="service-item__trigger" aria-expanded="false">
+              <span class="service-item__eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>COMUNIDADE</span>
+              <span class="service-item__title">Rede de parceiros</span>
+              <span class="service-item__meta">
+                <span><em>Foco</em> Especialistas</span>
+                <span><em>Modo</em> Proximidade</span>
+                <span><em>Zona</em> Rede Local</span>
+              </span>
+              <span class="service-item__toggle" aria-hidden="true">∨</span>
+            </button>
+            <div class="service-item__panel">
+              <div class="service-item__panel-inner">
+                <div class="service-triptych">
+                  <div class="image-frame image-frame--wide">
+                    <img src="public/images/03_Praca_1920x1080.jpg" alt="Vila histórica de Cascais" loading="lazy" />
+                  </div>
+                  <div class="image-frame image-frame--square">
+                    <img src="public/images/04_Boca_do_Inferno.jpg" alt="Boca do Inferno em Cascais" loading="lazy" />
+                  </div>
+                  <div class="service-detail-card">
+                    <p class="service-detail-card__text">
+                      Ligações a profissionais, especialistas e à comunidade local,
+                      de acordo com o que precisa.
+                    </p>
+                    <button type="button" class="text-action-link" data-open-modal data-ritual="Rede de parceiros">
+                      Falar sobre Rede de parceiros <span>→</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hairline" data-reveal="line"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="organic-flora organic-flora--footer-seam" data-parallax-box="-0.06" aria-hidden="true">
+      <img
+        src="public/images/img_fundo/Flor%20esbo%C3%A7ada%20amarelo-lima%20com%20ramo%20sinuoso-2%20(1).png"
+        alt=""
+        loading="lazy"
+      />
+    </div>
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__cta-col" data-reveal="fade-up">
+          <span class="eyebrow eyebrow--light"><span class="eyebrow__dot" aria-hidden="true"></span>CONTACTO</span>
+          <h2 class="footer__heading">O que gostaria de<br />construir em <em>Portugal?</em></h2>
+          <p class="footer__lead">Conte-nos o que procura, o que imagina e o que precisa de esclarecer. O primeiro passo é conhecermo-nos.</p>
+          <div class="footer__cta-actions">
+            <button type="button" class="pill-btn pill-btn--light" data-open-modal data-ritual="Conversa Inicial">
+              <span>Fale connosco</span>
+              <span class="pill-btn__circle" aria-hidden="true">→</span>
+            </button>
+          </div>
+        </div>
+        <div class="footer__info-grid" data-reveal="fade-up" data-delay="120">
+          <div class="footer-info-block"><span class="footer-info-block__label">TERRITÓRIO</span><p class="footer-info-block__value">Cascais &amp; Lisboa<br />Portugal</p></div>
+          <div class="footer-info-block"><span class="footer-info-block__label">CONTACTO DIRETO</span><p class="footer-info-block__value"><a href="mailto:ola@coralportugal.pt">ola@coralportugal.pt</a><br /><a href="tel:+351210000000">+351 210 000 000</a></p></div>
+          <div class="footer-info-block"><span class="footer-info-block__label">ATENDIMENTO</span><p class="footer-info-block__value">Segunda a Sexta</p></div>
+          <div class="footer-info-block"><span class="footer-info-block__label">HORÁRIO</span><p class="footer-info-block__value">09:00 às 19:00</p></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <a href="index.html" class="brand brand--footer" aria-label="Coral Living Início"><img src="logo.png" alt="Coral Living" class="brand__logo brand__logo--footer" /></a>
+        <p class="footer__copyright">© 2026 Coral. Todos os direitos reservados.</p>
+        <nav class="footer__nav" aria-label="Navegação Rodapé">
+          <a href="a-coral.html">A Coral</a>
+          <a href="servicos.html">Serviços</a>
+          <a href="collection.html">Collection</a>
+          <a href="comunidade.html">Comunidade</a>
+          <a href="cascais-lisboa.html">Cascais &amp; Lisboa</a>
+          <a href="fundadoras.html">Fundadoras</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="sanctuary-modal" id="sanctuaryModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="sanctuary-modal__backdrop" data-close-modal></div>
+    <div class="sanctuary-modal__dialog">
+      <button type="button" class="sanctuary-modal__close" data-close-modal aria-label="Fechar janela">✕</button>
+      <span class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span>CORAL · CASCAIS &amp; LISBOA</span>
+      <h3 class="sanctuary-modal__title" id="modalTitle">O primeiro passo é <em>conhecermo-nos.</em></h3>
+      <p class="sanctuary-modal__desc">Conte-nos o que procura, o que imagina e o que precisa de esclarecer. A Anne e a Constança respondem pessoalmente.</p>
+      <form class="sanctuary-form" id="sanctuaryForm">
+        <div class="sanctuary-form__field"><label for="guestName">Nome completo</label><input type="text" id="guestName" name="guestName" placeholder="Mariana Silva" required /></div>
+        <div class="sanctuary-form__field"><label for="guestEmail">Endereço de email</label><input type="email" id="guestEmail" name="guestEmail" placeholder="mariana@exemplo.pt" required /></div>
+        <div class="sanctuary-form__field">
+          <label for="guestRitual">Em que etapa podemos ajudar?</label>
+          <select id="guestRitual" name="guestRitual">
+            <option value="Conversa Inicial">Conversa Inicial</option>
+            <option value="Relocation">Relocation</option>
+            <option value="Compra">Compra</option>
+            <option value="Venda">Venda</option>
+            <option value="Arrendamento">Arrendamento</option>
+            <option value="Investimento">Investimento</option>
+            <option value="Concierge">Concierge</option>
+            <option value="Rede de parceiros">Rede de parceiros</option>
+            <option value="Coral Collection">Explorar a Collection</option>
+            <option value="Conhecer Anne e Constança">Conhecer a nossa história</option>
+          </select>
+        </div>
+        <button type="submit" class="pill-btn pill-btn--dark"><span>Enviar mensagem</span><span class="pill-btn__circle" aria-hidden="true">→</span></button>
+        <p class="sanctuary-form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
